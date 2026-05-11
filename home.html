@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velora Fashion</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black text-white overflow-x-hidden">
+    <!-- Navbar -->
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-black/70 backdrop-blur-lg border-b border-gray-800"
+    >
+      <nav
+        class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between"
+      >
+        <a href="home.html" class="text-3xl font-bold tracking-widest">
+          VELORA
+        </a>
+
+        <ul
+          class="hidden md:flex items-center gap-8 text-sm uppercase tracking-wider"
+        >
+          <li><a href="home.html" class="hover:text-gray-400">Home</a></li>
+          <li><a href="about.html" class="hover:text-gray-400">About</a></li>
+          <li><a href="store.html" class="hover:text-gray-400">Store</a></li>
+          <li>
+            <a href="contact.html" class="hover:text-gray-400">Contact</a>
+          </li>
+        </ul>
+
+        <button id="menuBtn" class="md:hidden text-3xl">☰</button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden bg-black border-t border-gray-800"
+      >
+        <ul class="flex flex-col p-6 gap-5 uppercase text-sm tracking-wider">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section
+      class="relative h-screen flex items-center justify-center text-center px-6 hero-section"
+    >
+      <div class="absolute inset-0 bg-black/60"></div>
+
+      <div class="relative z-10 max-w-4xl" data-aos="zoom-in">
+        <p class="uppercase tracking-[10px] text-sm mb-6 text-gray-300">
+          New Fashion Collection
+        </p>
+
+        <h1 class="text-5xl md:text-8xl font-black leading-tight mb-6">
+          WEAR
+          <span class="text-gray-400">CONFIDENCE</span>
+        </h1>
+
+        <p
+          class="text-lg md:text-xl text-gray-300 leading-relaxed mb-10 max-w-2xl mx-auto"
+        >
+          Discover premium streetwear and luxury fashion crafted for modern
+          style lovers.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-5 justify-center">
+          <a
+            href="store.html"
+            class="bg-white text-black px-10 py-4 rounded-full font-semibold hover:bg-gray-300 transition duration-300"
+          >
+            Shop Collection
+          </a>
+
+          <a
+            href="about.html"
+            class="border border-white px-10 py-4 rounded-full font-semibold hover:bg-white hover:text-black transition duration-300"
+          >
+            Explore Brand
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fashion Cards -->
+    <section class="bg-black py-24 px-6">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+        <div
+          class="relative rounded-3xl overflow-hidden group"
+          data-aos="fade-up"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1469&auto=format&fit=crop"
+            class="h-[500px] w-full object-cover group-hover:scale-110 duration-500"
+          />
+
+          <div class="absolute inset-0 bg-black/40 flex items-end p-8">
+            <div>
+              <h2 class="text-3xl font-bold mb-3">Streetwear</h2>
+              <a href="store.html" class="underline">View Collection</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="relative rounded-3xl overflow-hidden group"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1373&auto=format&fit=crop"
+            class="h-[500px] w-full object-cover group-hover:scale-110 duration-500"
+          />
+
+          <div class="absolute inset-0 bg-black/40 flex items-end p-8">
+            <div>
+              <h2 class="text-3xl font-bold mb-3">Luxury Fit</h2>
+              <a href="store.html" class="underline">View Collection</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="relative rounded-3xl overflow-hidden group"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1470&auto=format&fit=crop"
+            class="h-[500px] w-full object-cover group-hover:scale-110 duration-500"
+          />
+
+          <div class="absolute inset-0 bg-black/40 flex items-end p-8">
+            <div>
+              <h2 class="text-3xl font-bold mb-3">Modern Style</h2>
+              <a href="store.html" class="underline">View Collection</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-center py-8 text-gray-500">
+      <p>© 2026 Velora Fashion. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

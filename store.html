@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store - Velora</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-100 text-black">
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-lg border-b border-gray-800"
+    >
+      <nav
+        class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between"
+      >
+        <a href="home.html" class="text-3xl font-bold tracking-widest">
+          VELORA
+        </a>
+
+        <ul
+          class="hidden md:flex items-center gap-8 text-sm uppercase tracking-wider"
+        >
+          <li><a href="home.html" class="hover:text-gray-400">Home</a></li>
+          <li><a href="about.html" class="hover:text-gray-400">About</a></li>
+          <li><a href="store.html" class="hover:text-gray-400">Store</a></li>
+          <li>
+            <a href="contact.html" class="hover:text-gray-400">Contact</a>
+          </li>
+        </ul>
+
+        <button id="menuBtn" class="md:hidden text-3xl">☰</button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden bg-black border-t border-gray-800"
+      >
+        <ul class="flex flex-col p-6 gap-5 uppercase text-sm tracking-wider">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="py-24 px-6">
+      <div class="max-w-7xl mx-auto text-center mb-16">
+        <p class="uppercase tracking-[8px] text-sm text-gray-500 mb-4">
+          Our Collection
+        </p>
+
+        <h1 class="text-5xl md:text-6xl font-black mb-6">Fashion Store</h1>
+
+        <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+          Explore our premium fashion collections designed for modern
+          lifestyles.
+        </p>
+      </div>
+
+      <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          class="bg-white rounded-3xl overflow-hidden shadow-xl product-card"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1469&auto=format&fit=crop"
+            class="h-96 w-full object-cover"
+          />
+          <div class="p-6">
+            <div class="flex justify-between items-center mb-4">
+              <h2 class="text-2xl font-bold">Classic Tee</h2>
+              <span class="font-bold">$40</span>
+            </div>
+
+            <button
+              class="bg-black text-white py-3 rounded-full w-full hover:bg-gray-800 transition"
+            >
+              Add To Cart
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-3xl overflow-hidden shadow-xl product-card"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1373&auto=format&fit=crop"
+            class="h-96 w-full object-cover"
+          />
+
+          <div class="p-6">
+            <div class="flex justify-between items-center mb-4">
+              <h2 class="text-2xl font-bold">Luxury Fit</h2>
+              <span class="font-bold">$70</span>
+            </div>
+
+            <button
+              class="bg-black text-white py-3 rounded-full w-full hover:bg-gray-800 transition"
+            >
+              Add To Cart
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-3xl overflow-hidden shadow-xl product-card"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1470&auto=format&fit=crop"
+            class="h-96 w-full object-cover"
+          />
+          <div class="p-6">
+            <div class="flex justify-between items-center mb-4">
+              <h2 class="text-2xl font-bold">Modern Jacket</h2>
+              <span class="font-bold">$90</span>
+            </div>
+
+            <button
+              class="bg-black text-white py-3 rounded-full w-full hover:bg-gray-800 transition"
+            >
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
